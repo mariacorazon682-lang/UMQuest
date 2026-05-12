@@ -11,36 +11,21 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class MainActivity extends AppCompatActivity {
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import android.content.SharedPreferences;
 
-    private ImageButton startbutton;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.get_started);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.getstart), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
-        startbutton = findViewById(R.id.start);
-
-        View.OnClickListener listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openWhoIsUsing();
-            }
-        };
-
-        startbutton.setOnClickListener(listener);
-
-    }
-
-    public void openWhoIsUsing() {
-        Intent intent = new Intent(this, Thisacc.class);
+        Intent intent = new Intent(this, getstarted.class);
         startActivity(intent);
+        finish();
+        overridePendingTransition(R.anim.slide_up, R.anim.stay);
+
     }
+
 }

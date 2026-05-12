@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".studentforgotpass">
+
+    <ImageView
+        android:id="@+id/backgroundGifForgot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/bubbles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:layout_marginTop="180dp"
+            app:cardElevation="0dp"
+            android:backgroundTint="@android:color/transparent">
+
+            <ImageButton
+                android:id="@+id/logo_forgot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                android:transitionName="logo_shared_element"
+                app:srcCompat="@drawable/umquestlogo" />
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/whiteboard_layout"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:background="@drawable/whiteboard"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:srcCompat="@drawable/bluestudent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="New Password"
+                    android:textColor="@color/blue"
+                    android:textSize="33dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:textAlignment="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Create your forgotten password!"
+                    android:textAlignment="center"
+                    android:textColor="@color/ice"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/usernameStdForgot"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_outline2"
+                    android:padding="5dp"
+                    android:hint="  Username"
+                    android:textColorHint="@color/pale_blue"
+                    android:textSize="20dp"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/newStdPasswordInput"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_outline2"
+                    android:padding="5dp"
+                    android:hint="  Enter New Password"
+                    android:textColorHint="@color/pale_blue"
+                    android:textSize="20dp"
+                    android:inputType="textPassword" />
+
+                <EditText
+                    android:id="@+id/confirmStdPasswordInput"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_outline2"
+                    android:padding="5dp"
+                    android:hint="  Confirm Password"
+                    android:textColorHint="@color/pale_blue"
+                    android:textSize="20dp"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btn_create_forgotStd"
+                    android:layout_width="300dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/button_blue"
+                    android:text="Create"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

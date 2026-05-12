@@ -2,7 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="blue">#010862</color>
+    <color name="blue">#040C8A</color>
+    <color name="dark_blue">#09003E</color>
+    <color name="pale_blue">#C54145A2</color>
+    <color name="ice">#92D2EB</color>
     <color name="ocean_blue">#0080DC</color>
     <color name="red">#F80000</color>
     <color name="maroon">#5F0510</color>

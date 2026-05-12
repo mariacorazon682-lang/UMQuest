@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "325091784852",
+    "project_id": "umquest",
+    "storage_bucket": "umquest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325091784852:android:25b339bdbf73b555f41c81",
+        "android_client_info": {
+          "package_name": "com.example.umquest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr0Jho5HkH5ZQd_K6OzXkQ1VQRYQPoEcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325091784852:android:f18456e12f393558f41c81",
+        "android_client_info": {
+          "package_name": "com.example.umquuest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr0Jho5HkH5ZQd_K6OzXkQ1VQRYQPoEcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
